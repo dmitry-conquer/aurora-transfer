@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+  </head>
+  <body data-smooth-scroll="true">
+    <div class="wrapper">
+      {{> header}}
+      <main>
+        <section class="transfer-hero">
+          <div class="transfer-hero__wrapper" style="background-image: url(&quot;/images/hero-bg.png&quot;)">
+            <div class="transfer-hero__image">
+              <img src="/images/hero.png" alt="hero" />
+            </div>
+            <div class="transfer-hero__container t-container">
+              <div class="transfer-hero__content">
+                <h1 class="transfer-hero__title">Switch To Aurora</h1>
+                <div class="transfer-hero__features">
+                  <div class="transfer-hero__feature">Work in an Environment That Values You</div>
+                  <div class="transfer-hero__feature">
+                    Transferring <br />
+                    to Aurora Is <br />
+                    Simple
+                  </div>
+                  <div class="transfer-hero__feature">Sign-On Bonus</div>
+                </div>
+                <p class="transfer-hero__text">
+                  Join one of Pennsylvania’s leading home care agencies <br />
+                  today and get rewarded for the care you already provide.
+                </p>
+                <div class="transfer-hero__actions">
+                  <a href="#" class="transfer-hero__button t-button">call us</a>
+                  <p class="transfer-hero__actions-text">
+                    Or fill out the <button type="button" class="transfer-hero__actions-button">contact form</button>
+                  </p>
+                </div>
+              </div>
+              <div class="transfer-hero__reviews">
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-11a2fea5-ee8d-4844-b34c-cc1deeb90288" data-elfsight-app-lazy></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      {{> footer}}
+    </div>
+    <script type="module" src="/src/scripts/main.ts" defer></script>
+  </body>
+</html>
