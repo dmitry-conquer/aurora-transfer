@@ -33,6 +33,7 @@
     transform: translate(-50%, -50%);
     width: fluid(85, 106);
     height: fluid(85, 106);
+    transition: transform 0.3s ease;
 
     @include large {
       left: 52%;
@@ -44,7 +45,10 @@
 
     @media (max-width: rem(900)) {
       left: 50%;
-      transform: translate(-50%, -50%);
+    }
+
+    @include hover {
+      transform: scale(1.1) translate(-48%, -48%);
     }
   }
 

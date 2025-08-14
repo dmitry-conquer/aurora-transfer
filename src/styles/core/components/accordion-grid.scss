@@ -1,0 +1,64 @@
+@use "../helpers/" as *;
+
+.accordion-grid {
+  &__container {
+  }
+
+  &__header {
+    margin-bottom: rem(40);
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: rem(16);
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: fluid(16, 24);
+  }
+}
+
+.accordion-grid-item {
+  border-radius: fluid(15, 24);
+  padding: rem(16);
+  background: rgba(255, 255, 255, 0.1);
+
+  &__icon {
+    margin-bottom: rem(24);
+    width: rem(64);
+    height: rem(64);
+    flex-shrink: 0;
+  }
+
+  &__content {
+  }
+
+  &__button {
+    text-align: left;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    will-change: max-height;
+  }
+
+  &__text-inner {
+    padding-top: rem(16);
+  }
+}
