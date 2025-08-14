@@ -15,7 +15,6 @@ body {
 // 📐 CONTAINER & LAYOUT
 // ===========================
 
-
 .wrapper {
   overflow: hidden;
   position: relative;
@@ -43,6 +42,19 @@ body {
   padding-bottom: fluid(60, 80);
 }
 
+.t-title {
+  font-size: fluid(25, 40);
+  margin-bottom: rem(16);
+  color: #14317f;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+
+  span {
+    color: #52c055;
+  }
+}
+
 .t-button {
   font-size: fluid(18, 24);
   font-weight: 700;
@@ -57,6 +69,7 @@ body {
   justify-content: center;
   transition: opacity 0.3s ease;
   line-height: 1;
+  border: 1px solid transparent;
 
   @include hover {
     opacity: 0.8;
@@ -65,8 +78,13 @@ body {
   @include x-small {
     width: 100%;
   }
-}
 
+  &--white {
+    background-color: #fff;
+    border-color: #52c055;
+    color: #52c055;
+  }
+}
 
 @include large {
   br {

@@ -1,0 +1,80 @@
+@use "../helpers/" as *;
+
+.t-rows {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(40, 80);
+  }
+}
+
+.t-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: fluid(24, 40);
+  align-items: center;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    height: rem(438);
+    z-index: -1;
+  }
+
+  &--left {
+    .t-row__bg {
+      top: 0;
+      right: calc(100% + rem(-110));
+      border-bottom-right-radius: rem(16);
+    }
+  }
+
+  &--right {
+    .t-row__content {
+      order: -1;
+    }
+    .t-row__bg {
+      bottom: 0;
+      left: calc(100% + rem(-110));
+      border-top-left-radius: rem(16);
+    }
+  }
+
+  &__image {
+    img {
+      border-radius: rem(16);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+  }
+
+  &__text {
+    margin-bottom: rem(16);
+    p {
+      color: #626262;
+      font-size: fluid(15, 16);
+      line-height: 1.68;
+
+      &:not(:last-child) {
+        margin-bottom: fluid(4, 16);
+      }
+    }
+
+    @include small {
+      margin-bottom: rem(24);
+    }
+  }
+
+  &__button {
+  }
+}
