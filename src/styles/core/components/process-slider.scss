@@ -1,0 +1,154 @@
+@use "../helpers/" as *;
+
+.process-slider {
+  background-color: #f7f5f6;
+
+  &__container {
+    padding-left: calc((100% - 1220px) / 2);
+    display: flex;
+    align-items: center;
+    gap: fluid(24, 53);
+
+    @include medium {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    padding-left: rem(20);
+    flex: 0 1 rem(350);
+    flex-shrink: 0;
+
+    @include medium {
+      flex: 0 1 auto;
+      padding-right: rem(20);
+    }
+  }
+
+  &__title {
+    margin-bottom: fluid(12, 70);
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: rem(16);
+    justify-content: space-between;
+  }
+
+  &__label {
+    color: #626262;
+    font-size: rem(16);
+    line-height: 1.7;
+  }
+
+  &__navigation {
+    display: flex;
+    column-gap: rem(20);
+  }
+
+  &__button {
+    transition: opacity 0.3s ease;
+    &.swiper-button-disabled {
+      opacity: 0.3;
+    }
+
+    &--left {
+    }
+
+    &--right {
+    }
+
+    @include hover {
+      opacity: 0.7;
+    }
+
+    svg {
+      width: fluid(16, 24);
+      height: fluid(16, 24);
+    }
+  }
+
+  &__slider {
+    max-width: 100%;
+    overflow: hidden;
+
+    @include medium {
+      padding-left: 20px;
+    }
+  }
+
+  &__wrapper {
+  }
+
+  &__slide {
+  }
+}
+
+.process-slide {
+  background-color: #fff;
+  border-radius: rem(20);
+  padding: rem(32);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: rem(242);
+
+  @include small {
+    padding: rem(24);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: fluid(100, 160);
+    height: fluid(100, 160);
+    background-color: #42c0c8;
+    border-radius: 50%;
+    transform: translate(25%, -25%);
+
+    @include small {
+      width: rem(160);
+      height: rem(160);
+      transform: translate(40%, -40%);
+    }
+  }
+
+  &__icon {
+    width: fluid(45, 60);
+    height: fluid(45, 60);
+    object-fit: contain;
+    position: absolute;
+    right: rem(26);
+    top: rem(26);
+    z-index: 2;
+
+    @include small {
+      right: rem(18);
+      top: rem(18);
+    }
+  }
+
+  &__content {
+  }
+
+  &__title {
+    color: #434343;
+    font-size: fluid(20, 25);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: rem(16);
+    max-width: rem(233);
+  }
+
+  &__text {
+    color: #626262;
+    font-size: rem(16);
+    line-height: 1.7;
+    max-width: rem(253);
+  }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
   </head>
   <body data-smooth-scroll="true">
     <div class="wrapper">
@@ -307,6 +308,83 @@
           </div>
         </section>
 
+        <section class="process-slider section-pb-sm section-pt-sm">
+          <div class="process-slider__container">
+            <div class="process-slider__content">
+              <h2 class="process-slider__title t-title">How the Transfer Process Works</h2>
+              <div class="process-slider__actions">
+                <span class="process-slider__label">Transfer Process</span>
+                <div class="process-slider__navigation">
+                  <button
+                    type="button"
+                    aria-label="Prev slide"
+                    title="Prev slide"
+                    class="process-slider__button process-slider__button--left"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M16 2L6 12L16 22"
+                        stroke="#52C055"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="Next slide"
+                    title="Prev slide"
+                    class="process-slider__button process-slider__button--right"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M8 22L18 12L8 2"
+                        stroke="#52C055"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="process-slider__slider swiper-slider" id="process-slider">
+              <div class="process-slider__wrapper swiper-wrapper">
+                <div class="process-slider__slide swiper-slide process-slide">
+                  <img src="/images/is1.svg" alt="" class="process-slide__icon" />
+                  <div class="process-slide__content">
+                    <h3 class="process-slide__title">Initial Contact:</h3>
+                    <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
+                  </div>
+                </div>
+                <div class="process-slider__slide swiper-slide process-slide">
+                  <img src="/images/is1.svg" alt="" class="process-slide__icon" />
+                  <div class="process-slide__content">
+                    <h3 class="process-slide__title">Initial Contact:</h3>
+                    <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
+                  </div>
+                </div>
+                <div class="process-slider__slide swiper-slide process-slide">
+                  <img src="/images/is1.svg" alt="" class="process-slide__icon" />
+                  <div class="process-slide__content">
+                    <h3 class="process-slide__title">Paperwork and Training:</h3>
+                    <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
+                  </div>
+                </div>
+                <div class="process-slider__slide swiper-slide process-slide">
+                  <img src="/images/is1.svg" alt="" class="process-slide__icon" />
+                  <div class="process-slide__content">
+                    <h3 class="process-slide__title">Initial Contact:</h3>
+                    <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="t-rows section-pb section-pt">
           <div class="t-rows__container t-container">
             <div class="t-row">
@@ -427,6 +505,39 @@
           </div>
         </section>
       </main>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+
+      <script>
+        const swiperNode = document.getElementById("process-slider");
+        if (swiperNode) {
+          new Swiper(swiperNode, {
+            navigation: {
+              prevEl: ".process-slider__button--left",
+              nextEl: ".process-slider__button--right",
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1.1,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 1.4,
+                spaceBetween: 10,
+              },
+              640: {
+                slidesPerView: 1.9,
+                spaceBetween: 10,
+              },
+
+              1600: {
+                spaceBetween: 24,
+                slidesPerView: 2.9,
+              },
+            },
+          });
+        }
+      </script>
       {{> footer}}
     </div>
     <script type="module" src="/src/scripts/main.ts" defer></script>
