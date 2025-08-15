@@ -95,8 +95,10 @@ class Accordion {
     this.buttonElements.forEach((buttonElement: HTMLElement, index: number) => {
       const isActive = activeAccordionIndex === index;
       const content = buttonElement.nextElementSibling as HTMLElement;
+      const parent = buttonElement.parentElement as HTMLElement;
 
       buttonElement.classList.toggle(this.stateClasses.isActive, isActive);
+      parent.classList.toggle(this.stateClasses.isActive, isActive);
       buttonElement.setAttribute(this.stateAttributes.ariaExpanded, isActive.toString());
       content.style.maxHeight = isActive ? `${content.scrollHeight}px` : "";
     });
