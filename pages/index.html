@@ -353,31 +353,32 @@
             <div class="process-slider__slider swiper-slider" id="process-slider">
               <div class="process-slider__wrapper swiper-wrapper">
                 <div class="process-slider__slide swiper-slide process-slide">
-                  <img src="/images/is1.svg" alt="" class="process-slide__icon" />
-                  <div class="process-slide__content">
-                    <h3 class="process-slide__title">Initial Contact:</h3>
-                    <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
+                  <div class="process-slide__inner">
+                    <img src="/images/is1.svg" alt="" class="process-slide__icon" />
+                    <div class="process-slide__content">
+                      <h3 class="process-slide__title">Initial Contact:</h3>
+                      <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
+                    </div>
                   </div>
+                  <img src="/images/arrow.svg" alt="" class="process-slide__arrow" />
                 </div>
                 <div class="process-slider__slide swiper-slide process-slide">
-                  <img src="/images/is1.svg" alt="" class="process-slide__icon" />
-                  <div class="process-slide__content">
-                    <h3 class="process-slide__title">Initial Contact:</h3>
-                    <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
+                  <div class="process-slide__inner">
+                    <img src="/images/is1.svg" alt="" class="process-slide__icon" />
+                    <div class="process-slide__content">
+                      <h3 class="process-slide__title">Initial Contact:</h3>
+                      <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
+                    </div>
                   </div>
+                  <img src="/images/arrow.svg" alt="" class="process-slide__arrow" />
                 </div>
                 <div class="process-slider__slide swiper-slide process-slide">
-                  <img src="/images/is1.svg" alt="" class="process-slide__icon" />
-                  <div class="process-slide__content">
-                    <h3 class="process-slide__title">Paperwork and Training:</h3>
-                    <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
-                  </div>
-                </div>
-                <div class="process-slider__slide swiper-slide process-slide">
-                  <img src="/images/is1.svg" alt="" class="process-slide__icon" />
-                  <div class="process-slide__content">
-                    <h3 class="process-slide__title">Initial Contact:</h3>
-                    <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
+                  <div class="process-slide__inner">
+                    <img src="/images/is1.svg" alt="" class="process-slide__icon" />
+                    <div class="process-slide__content">
+                      <h3 class="process-slide__title">Initial Contact:</h3>
+                      <p class="process-slide__text">Reach out to us via phone or email to express your interest.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -509,6 +510,14 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
 
       <script>
+        const processSlides = document.querySelectorAll(".process-slide");
+
+        if (processSlides.length > 0) {
+          processSlides.forEach((slide, index) => {
+            slide.style.zIndex = processSlides.length - index;
+          });
+        }
+
         const swiperNode = document.getElementById("process-slider");
         if (swiperNode) {
           new Swiper(swiperNode, {
@@ -518,7 +527,7 @@
             },
             breakpoints: {
               0: {
-                slidesPerView: 1.1,
+                slidesPerView: 1.15,
                 spaceBetween: 10,
               },
               480: {
