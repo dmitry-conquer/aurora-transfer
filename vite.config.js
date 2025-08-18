@@ -53,7 +53,7 @@ const buildConfig = {
 
 // Custom plugins
 const plugins = [
-  webfontDownload(["https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap"]),
+  // webfontDownload(["https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap"]),
   handlebars({
     partialDirectory: COMPONENTS_DIR,
   }),

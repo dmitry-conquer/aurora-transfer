@@ -1,0 +1,1090 @@
+{
+  "key": "group_transfer_template",
+  "title": "Transfer Template",
+  "fields": [
+    {
+      "key": "field_transfer_hero",
+      "label": "Hero Section",
+      "name": "hero_section",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_hero_bg",
+      "label": "Hero Background",
+      "name": "hero_bg",
+      "type": "url",
+      "instructions": "Додайте URL фонового зображення",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": ""
+    },
+    {
+      "key": "field_hero_image",
+      "label": "Hero Image",
+      "name": "hero_image",
+      "type": "image",
+      "instructions": "Додайте зображення через ID",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_hero_title",
+      "label": "Hero Title",
+      "name": "hero_title",
+      "type": "textarea",
+      "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_hero_features",
+      "label": "Hero Features",
+      "name": "hero_features",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Feature",
+      "sub_fields": [
+        {
+          "key": "field_hero_feature_text",
+          "label": "Feature Text",
+          "name": "text",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    },
+    {
+      "key": "field_hero_text",
+      "label": "Hero Text",
+      "name": "hero_text",
+      "type": "textarea",
+      "instructions": "Текст з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_hero_button",
+      "label": "Hero Button",
+      "name": "hero_button",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_hero_widget",
+      "label": "Hero Widget",
+      "name": "hero_widget",
+      "type": "wysiwyg",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "tabs": "all",
+      "toolbar": "full",
+      "media_upload": 1,
+      "delay": 0
+    },
+    {
+      "key": "field_transfer_cta_video",
+      "label": "CTA Video Section",
+      "name": "cta_video_section",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_cta_video",
+      "label": "CTA Video",
+      "name": "cta_video",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_cta_video_play_button",
+      "label": "Play Button Icon",
+      "name": "cta_video_play_button",
+      "type": "image",
+      "instructions": "Додайте зображення через ID",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_cta_video_title",
+      "label": "Video Title",
+      "name": "cta_video_title",
+      "type": "textarea",
+      "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_cta_video_subtitle",
+      "label": "Video Subtitle",
+      "name": "cta_video_subtitle",
+      "type": "textarea",
+      "instructions": "Підзаголовок з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_cta_video_button",
+      "label": "Video Button",
+      "name": "cta_video_button",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_cta_video_image",
+      "label": "Video Image Desktop",
+      "name": "cta_video_image",
+      "type": "image",
+      "instructions": "Додайте зображення через ID",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_cta_video_image_mobile",
+      "label": "Video Image Mobile",
+      "name": "cta_video_image_mobile",
+      "type": "image",
+      "instructions": "Додайте зображення через ID",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_transfer_t_rows",
+      "label": "T-Rows Section",
+      "name": "t_rows_section",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_t_row_1_decor",
+      "label": "Row 1 Decorative Image",
+      "name": "t_row_1_decor",
+      "type": "image",
+      "instructions": "Додайте зображення через ID",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_t_row_1_image",
+      "label": "Row 1 Main Image",
+      "name": "t_row_1_image",
+      "type": "image",
+      "instructions": "Додайте зображення через ID",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_t_row_1_title",
+      "label": "Row 1 Title",
+      "name": "t_row_1_title",
+      "type": "textarea",
+      "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_t_row_1_text",
+      "label": "Row 1 Text",
+      "name": "t_row_1_text",
+      "type": "wysiwyg",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "tabs": "all",
+      "toolbar": "full",
+      "media_upload": 1,
+      "delay": 0
+    },
+    {
+      "key": "field_t_row_1_button",
+      "label": "Row 1 Button",
+      "name": "t_row_1_button",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_t_row_2_decor",
+      "label": "Row 2 Decorative Image",
+      "name": "t_row_2_decor",
+      "type": "image",
+      "instructions": "Додайте зображення через ID",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_t_row_2_image",
+      "label": "Row 2 Main Image",
+      "name": "t_row_2_image",
+      "type": "image",
+      "instructions": "Додайте зображення через ID",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_t_row_2_title",
+      "label": "Row 2 Title",
+      "name": "t_row_2_title",
+      "type": "textarea",
+      "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_t_row_2_text",
+      "label": "Row 2 Text",
+      "name": "t_row_2_text",
+      "type": "wysiwyg",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "tabs": "all",
+      "toolbar": "full",
+      "media_upload": 1,
+      "delay": 0
+    },
+    {
+      "key": "field_t_row_2_button",
+      "label": "Row 2 Button",
+      "name": "t_row_2_button",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_transfer_accordion_grid",
+      "label": "Accordion Grid Section",
+      "name": "accordion_grid_section",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_grid_a_title",
+      "label": "Grid Title",
+      "name": "grid_a_title",
+      "type": "textarea",
+      "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_grid_a_text",
+      "label": "Grid Text",
+      "name": "grid_a_text",
+      "type": "textarea",
+      "instructions": "Текст з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_grid_a_bg",
+      "label": "Grid Background",
+      "name": "grid_a_bg",
+      "type": "url",
+      "instructions": "Додайте URL фонового зображення",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": ""
+    },
+    {
+      "key": "field_grid_a_items",
+      "label": "Grid Items",
+      "name": "grid_a_items",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Grid Item",
+      "sub_fields": [
+        {
+          "key": "field_grid_item_icon",
+          "label": "Item Icon",
+          "name": "icon",
+          "type": "image",
+          "instructions": "Додайте зображення через ID",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "id",
+          "preview_size": "medium",
+          "library": "all",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": ""
+        },
+        {
+          "key": "field_grid_item_title",
+          "label": "Item Title",
+          "name": "title",
+          "type": "textarea",
+          "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "maxlength": "",
+          "rows": 3,
+          "new_lines": "br"
+        },
+        {
+          "key": "field_grid_item_text",
+          "label": "Item Text",
+          "name": "text",
+          "type": "wysiwyg",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1,
+          "delay": 0
+        }
+      ]
+    },
+    {
+      "key": "field_transfer_process_slider",
+      "label": "Process Slider Section",
+      "name": "process_slider_section",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_process_slider_title",
+      "label": "Slider Title",
+      "name": "process_slider_title",
+      "type": "textarea",
+      "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_process_slider_label",
+      "label": "Slider Label",
+      "name": "process_slider_label",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_process_slider_items",
+      "label": "Slider Items",
+      "name": "process_slider_items",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add Slider Item",
+      "sub_fields": [
+        {
+          "key": "field_process_item_icon",
+          "label": "Item Icon",
+          "name": "icon",
+          "type": "image",
+          "instructions": "Додайте зображення через ID",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "id",
+          "preview_size": "medium",
+          "library": "all",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": ""
+        },
+        {
+          "key": "field_process_item_title",
+          "label": "Item Title",
+          "name": "title",
+          "type": "textarea",
+          "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "maxlength": "",
+          "rows": 3,
+          "new_lines": "br"
+        },
+        {
+          "key": "field_process_item_text",
+          "label": "Item Text",
+          "name": "text",
+          "type": "textarea",
+          "instructions": "Текст з переносом по br та висотою в 3 ряда",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "maxlength": "",
+          "rows": 3,
+          "new_lines": "br"
+        },
+        {
+          "key": "field_process_item_arrow",
+          "label": "Item Arrow",
+          "name": "arrow",
+          "type": "image",
+          "instructions": "Додайте зображення через ID",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "return_format": "id",
+          "preview_size": "medium",
+          "library": "all",
+          "min_width": "",
+          "min_height": "",
+          "min_size": "",
+          "max_width": "",
+          "max_height": "",
+          "max_size": "",
+          "mime_types": ""
+        }
+      ]
+    },
+    {
+      "key": "field_transfer_what_is",
+      "label": "What Is Section",
+      "name": "what_is_section",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_what_is_title",
+      "label": "What Is Title",
+      "name": "what_is_title",
+      "type": "textarea",
+      "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_what_is_text",
+      "label": "What Is Text",
+      "name": "what_is_text",
+      "type": "wysiwyg",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "tabs": "all",
+      "toolbar": "full",
+      "media_upload": 1,
+      "delay": 0
+    },
+    {
+      "key": "field_what_is_button",
+      "label": "What Is Button",
+      "name": "what_is_button",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_what_is_image",
+      "label": "What Is Image",
+      "name": "what_is_image",
+      "type": "image",
+      "instructions": "Додайте зображення через ID",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_transfer_faq",
+      "label": "FAQ Section",
+      "name": "faq_section",
+      "type": "tab",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "placement": "top",
+      "endpoint": 0
+    },
+    {
+      "key": "field_faq_title",
+      "label": "FAQ Title",
+      "name": "faq_title",
+      "type": "textarea",
+      "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_faq_items",
+      "label": "FAQ Items",
+      "name": "faq_items",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "Add FAQ Item",
+      "sub_fields": [
+        {
+          "key": "field_faq_item_title",
+          "label": "FAQ Item Title",
+          "name": "title",
+          "type": "textarea",
+          "instructions": "Заголовок з переносом по br та висотою в 3 ряда",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "maxlength": "",
+          "rows": 3,
+          "new_lines": "br"
+        },
+        {
+          "key": "field_faq_item_text",
+          "label": "FAQ Item Text",
+          "name": "text",
+          "type": "wysiwyg",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1,
+          "delay": 0
+        }
+      ]
+    },
+    {
+      "key": "field_faq_image",
+      "label": "FAQ Image",
+      "name": "faq_image",
+      "type": "image",
+      "instructions": "Додайте зображення через ID",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "transfer-template.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "ACF fields for Transfer Template page"
+}

@@ -34,7 +34,17 @@
                 <div class="transfer-hero__actions">
                   <a href="#" class="transfer-hero__button t-button">call us</a>
                   <p class="transfer-hero__actions-text">
-                    Or fill out the <button type="button" class="transfer-hero__actions-button">contact form</button>
+                    Or fill out the
+                    <button
+                      type="button"
+                      id="open-transfer-form"
+                      aria-label="Open Transfer Form"
+                      data-micromodal-trigger="transfer-form-popup"
+                      aria-controls="transfer-form-popup"
+                      class="transfer-hero__actions-button"
+                    >
+                      contact form
+                    </button>
                   </p>
                 </div>
               </div>
@@ -547,8 +557,15 @@
           });
         }
       </script>
-      {{> footer}}
+      {{> modal}}
     </div>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script>
+      MicroModal.init({
+        disableScroll: true,
+        disableFocus: true,
+      });
+    </script>
     <script type="module" src="/src/scripts/main.ts" defer></script>
   </body>
 </html>

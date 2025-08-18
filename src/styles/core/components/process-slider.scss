@@ -17,8 +17,7 @@
 
   &__content {
     padding-left: rem(20);
-    flex: 0 1 rem(350);
-    flex-shrink: 0;
+    flex: 0 0 rem(370);
 
     @include medium {
       flex: 0 1 auto;
@@ -50,6 +49,7 @@
 
   &__button {
     transition: opacity 0.3s ease;
+    padding: 0 !important;
     &.swiper-button-disabled {
       opacity: 0.3;
     }
@@ -133,9 +133,6 @@
       right: rem(18);
       top: rem(18);
     }
-  }
-
-  &__content {
   }
 
   &__title {

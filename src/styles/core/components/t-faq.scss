@@ -49,6 +49,7 @@
     column-gap: rem(12);
     width: 100%;
     text-align: left;
+    padding: 0 !important;
 
     &.is-active {
       &::after {

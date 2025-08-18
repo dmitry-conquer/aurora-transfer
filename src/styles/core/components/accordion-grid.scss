@@ -47,7 +47,12 @@
 .accordion-grid-item {
   border-radius: fluid(15, 24);
   padding: rem(16);
+  min-height: rem(170);
   background: rgba(255, 255, 255, 0.1);
+
+  @include x-small {
+    min-height: unset;
+  }
 
   &__icon {
     margin-bottom: rem(24);
@@ -71,6 +76,7 @@
     justify-content: space-between;
     transition: color 0.3s ease;
     column-gap: rem(12);
+    padding: 0 !important;
 
     &.is-active {
       &::after {
