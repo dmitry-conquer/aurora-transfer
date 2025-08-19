@@ -11,7 +11,7 @@
       content: "";
       position: absolute;
       width: 100%;
-      height: rem(130);
+      height: rem(70);
       bottom: 0;
       left: 0;
       background-color: #fff;
@@ -158,9 +158,7 @@
     margin-top: rem(80);
     position: relative;
     z-index: 5;
-    .es-header-component-top {
-      display: none;
-    }
+   
     .Background__Base-sc-9e2e4036-1 {
       background-color: transparent !important;
     }
