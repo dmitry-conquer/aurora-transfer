@@ -41,6 +41,10 @@
   &--right {
     .t-row__content {
       order: -1;
+
+      @include medium {
+        order: 1;
+      }
     }
     .t-row__bg {
       bottom: 0;
